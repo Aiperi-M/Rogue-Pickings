@@ -28,13 +28,16 @@ h3, {
     font-weight: 700;
     text-transform: uppercase;
 }
+
 h1 {
     font-size: 1.9em;
 }
+
 h2 {
     font-size: 1.5em;
     color: #77a466;
 }
+
 h3 {
     font-size: 0.75em;
 }
@@ -47,6 +50,7 @@ p {
 ul {
     margin: 0;
 }
+
 /***** Header *****/
 
 header {
@@ -64,8 +68,8 @@ header h1 {
     padding: 2.37em 0;
     text-transform: uppercase;
     width: 100%;
-
 }
+
 header h1 span {
     color: #77a466;
 }
@@ -89,6 +93,7 @@ header nav ul li {
     list-style: none;
     line-height: 2em;
 }
+
 header nav ul li a{
     text-decoration: none;
     color:#77a466;
@@ -121,6 +126,7 @@ header nav ul li a{
     font-size: 1em;
     line-height: 1.6em;
 }
+
  /***** BOTTOM SECTION *****/
 
 .section-one,
@@ -143,6 +149,7 @@ header nav ul li a{
     list-style: none;
     padding: 0;
 }
+
 .menu li {
     padding: 0.62em 0;
     color:#77a466;
@@ -170,9 +177,56 @@ footer {
     text-align: center;
     width: 100%;
 }
+
 footer span {
     font-family: 'Galada', cursive;
     text-transform: lowercase;
     color: #77a466;
     font-size: 0.9em;
+}
+
+@media all and (min-width:768px) {
+   .bottom-section{
+        justify-content: space-between;
+        align-items: flex-start;
+        border-top: 1px solid #eee;
+    }
+
+    .section-one,
+    .section-two,
+    .section-three {
+        border-top: none;
+        flex-basis: 30%;
+    }
+
+    .section-two {
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+        padding: 0 20px;
+    }
+}
+
+/***** Media queries *****/
+ 
+@media all and (min-width:1200px) {
+    header {
+        justify-content: space-between;
+    }
+
+    header h1 {
+        width: 30%;
+        padding: 0;
+        text-align: left;
+    }
+
+    header nav {
+        border-top: none;
+        width: 40%;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+  }
+ 
 }
